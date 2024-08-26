@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-like Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="board-container">
+            <h2>Current Player: <span id="current-player" class="info">A</h2>
+
+            <div id="chessboard" class="board"></div>
+            <h3>Selected: <span id="selected-name" class="info">None</span></h3>
+        </div>
+        <div class="controls">
+            <button onclick="movePiece('L')">L</button>
+            <button onclick="movePiece('R')">R</button>
+            <button onclick="movePiece('F')">F</button>
+            <button onclick="movePiece('B')">B</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
